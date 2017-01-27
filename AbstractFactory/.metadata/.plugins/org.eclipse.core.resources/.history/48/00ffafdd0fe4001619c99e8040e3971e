@@ -1,0 +1,20 @@
+package Pattern;
+
+public class ReceptorCreator {
+	
+	public static final int visa = 0;
+	public static final int mastercard = 1;
+	
+	public Receptor create(int bandeira) {
+		
+		if(bandeira == ReceptorCreator.visa) {
+			return new ReceptorVisa();
+		} else if(bandeira == ReceptorCreator.mastercard) {
+			return new ReceptorMastercard();
+		} else {
+			throw new IllegalArgumentException("Bandeira não Conhecida");
+		}
+		
+	}
+
+}

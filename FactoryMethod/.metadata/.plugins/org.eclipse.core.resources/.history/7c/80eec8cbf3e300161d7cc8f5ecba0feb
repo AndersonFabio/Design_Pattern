@@ -1,0 +1,30 @@
+package Pattern;
+
+public class TestaEmissores {
+
+	public static void main(String[] args) {
+		
+		EmissorCreator creator = new EmissorCreator();
+		
+		Emissor emissor1 = creator.create(EmissorCreator.SMS);
+		emissor1.envia("Anderson");
+		
+		Emissor emissor2 = creator.create(EmissorCreator.EMAIL);
+		emissor2.envia("Anderson");
+		
+		Emissor emissor3 = creator.create(EmissorCreator.JMS);
+		emissor3.envia("Anderson");
+		
+		
+		Emissor emissor1 = new EmissorSMS();
+		emissor1.envia("Anderson Fábio SMS");
+		
+		Emissor emissor2 = new EmissorEmail();
+		emissor2.envia("Anderson Fábio Email");
+		
+		Emissor emissor3 = new EmissorJMS();
+		emissor3.envia("Anderson Fábio JMS");
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package Pattern;
+
+public class MasterCardComunicadorFactory {
+	
+	public EmissorCreator emissorCreator = new EmissorCreator();
+	public ReceptorCreator receptorCreator = new ReceptorCreator();
+	
+	public Emissor createEmissor() {
+		return emissorCreator.create(EmissorCreator.MASTERCARD);
+	}
+	
+	public Receptor createReceptor() {
+		return receptorCreator.create(ReceptorCreator.MASTERCARD);
+	}
+
+}

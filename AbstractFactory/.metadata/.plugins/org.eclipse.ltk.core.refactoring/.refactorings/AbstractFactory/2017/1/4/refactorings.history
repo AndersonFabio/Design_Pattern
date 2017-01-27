@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Pattern.MasterCardComunicadorFactory&apos; to &apos;MastercardComunicadorFactory&apos;&#x0D;&#x0A;- Original project: &apos;AbstractFactory&apos;&#x0D;&#x0A;- Original element: &apos;Pattern.MasterCardComunicadorFactory&apos;&#x0D;&#x0A;- Renamed element: &apos;Pattern.MastercardComunicadorFactory&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MasterCardComunicadorFactory&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Pattern{MasterCardComunicadorFactory.java[MasterCardComunicadorFactory" matchStrategy="1" name="MastercardComunicadorFactory" qualified="false" references="true" similarDeclarations="false" stamp="1485452797227" textual="false" version="1.0"/>
+</session>

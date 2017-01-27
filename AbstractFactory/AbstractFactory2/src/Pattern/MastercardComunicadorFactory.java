@@ -1,0 +1,18 @@
+package Pattern;
+
+public class MastercardComunicadorFactory implements ComunicadorFactory {
+
+	EmissorCreator emissorCreator = new EmissorCreator();
+	ReceptorCreator receptorCreator = new ReceptorCreator();
+	
+	@Override
+	public Emissor emissor() {
+		return emissorCreator.create(EmissorCreator.MASTERCARD);
+	}
+
+	@Override
+	public Receptor receptor() {
+		return receptorCreator.create(ReceptorCreator.MASTERCARD);
+	}
+
+}

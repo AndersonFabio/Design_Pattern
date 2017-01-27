@@ -1,0 +1,18 @@
+package Pattern;
+
+public class EmissorCreator {
+	
+	public static final int VISA = 0;
+	public static final int MASTERCARD = 1;
+	
+	public Emissor create(int tipoDoEmissor) {
+		if ( tipoDoEmissor == EmissorCreator.MASTERCARD) {
+			return new EmissorMastercard();
+		} else if ( tipoDoEmissor == EmissorCreator.VISA) {
+			return new EmissorVisa();
+		} else {
+			return IllegalArgumentException("Tipo de emissor não suportado!");
+		}
+	}
+
+}

@@ -1,0 +1,11 @@
+package Pattern;
+
+public class VisaComunicadorFactory implements ComunicadorFactory {
+
+	public ReceptorCreator receptorCreator = new ReceptorCreator();
+	public EmissorCreator emissorCreator = new EmissorCreator();
+	
+	public Emissor createEmissor() {
+		return emissorCreator(EmissorCreator.VISA);
+	}
+}

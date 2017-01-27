@@ -1,0 +1,22 @@
+package Pattern;
+
+public class EmissorCreator {
+	
+	private static final int SMS = 0;
+	private static final int EMAIL = 1;
+	private static final int JMS = 2;
+	
+	
+	public Emissor create(int tipoDeMensagem) {
+		if(tipoDeMensagem == EmissorCreator.SMS) {
+			return new EmissorSMS();
+		} else if( tipoDeMensagem == EmissorCreator.EMAIL) {
+			return new EmissorEmail();
+		} else if( tipoDeMensagem == EmissorCreator.JMS) {
+			return new EmissorJMS();
+		} else {
+			throw new IllegalArgumentException("Emissor Desconhecido");
+		}
+	}
+
+}
