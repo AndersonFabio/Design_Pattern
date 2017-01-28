@@ -1,0 +1,47 @@
+package Pattern;
+
+import java.util.Calendar;
+
+public class BBBoleto implements Boleto {
+
+	private String sacado;
+	private String cedente;
+	private double valor;
+	private Calendar vencimento;
+	private int nossoNumero;
+	
+	public BBBoleto(String sacado, String cedente, double valor, Calendar vencimento, int nossoNumero) {
+		this.sacado = sacado;
+		this.cedente = cedente;
+		this.valor = valor;
+		this.vencimento = vencimento;
+		this.nossoNumero = nossoNumero;
+	}
+
+	public String getSacado() {
+		return sacado;
+	}
+
+	public String getCedente() {
+		return cedente;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public Calendar getVencimento() {
+		return vencimento;
+	}
+
+
+	public int getNossoNumero() {
+		return nossoNumero;
+	}
+
+
+	
+	
+	
+
+}

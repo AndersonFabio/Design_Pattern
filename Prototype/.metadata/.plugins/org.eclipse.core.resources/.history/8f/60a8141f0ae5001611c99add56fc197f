@@ -1,0 +1,21 @@
+package Pattern;
+
+import java.util.Calendar;
+import java.util.Set;
+
+public class Campanha implements Prototype<Campanha> {
+
+	private String nome;
+	private Calendar vencimento;
+	private Set<String> palavrasChave;
+	
+	public Campanha(String nome, Calendar vencimento, Set<String> palavrasChe) {
+		this.nome = nome;
+		this.vencimento = vencimento;
+		this.palavrasChave = palavrasChave;
+	}
+
+	public Campanha clone() {
+		
+	}
+}
