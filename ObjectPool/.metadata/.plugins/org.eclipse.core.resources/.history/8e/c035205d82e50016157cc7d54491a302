@@ -1,0 +1,23 @@
+package Pattern;
+
+public class TestaFuncionarioPool {
+
+	public static void main(String[] args) throws Exception {
+		Pool<Funcionario> funcionarioPool = new FuncionarioPool();
+		
+		Funcionario funcionario = funcionarioPool.acquire();
+		
+		if(funcionario == null) {
+			throw new Exception("Não há funcionários disponíveis");
+		}
+		
+		System.out.println("Numero de Funcionários: "+funcionarioPool.totalFuncionarios());
+		while( funcionario != null) {
+			System.out.println("Funcionário: "+funcionario.getNome());
+			funcionario = funcionarioPool.acquire();
+		}
+		System.out.println("Numero de Funcionários: "+funcionarioPool.totalFuncionarios());
+
+	}
+
+}
